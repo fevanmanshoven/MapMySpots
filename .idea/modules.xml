@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MapMySpots.iml" filepath="$PROJECT_DIR$/.idea/modules/MapMySpots.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/MapMySpots.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/MapMySpots.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/GetLocationDetails.iml" filepath="$PROJECT_DIR$/.idea/modules/GetLocationDetails.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/GetLocationDetails.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/GetLocationDetails.app.iml" />
     </modules>
   </component>
 </project>
