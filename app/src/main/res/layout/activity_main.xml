@@ -10,14 +10,13 @@
         android:orientation="vertical">
 
         <fragment
-            android:id="@+id/mapFragment"
-            android:name="com.example.getlocationdetails.Screens.Home.HomeFragment"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:id="@+id/myNavHostFragment"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:navGraph="@navigation/navigation"
+            app:defaultNavHost="true"
+            />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

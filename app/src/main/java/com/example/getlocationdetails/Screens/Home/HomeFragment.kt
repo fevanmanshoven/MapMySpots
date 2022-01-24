@@ -20,6 +20,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.databinding.DataBindingUtil
+import androidx.navigation.Navigation
 import com.example.getlocationdetails.LocationModel
 import com.example.getlocationdetails.R
 import com.example.getlocationdetails.databinding.FragmentHomeBinding
@@ -53,8 +54,8 @@ class HomeFragment : Fragment() {
     private val currentLocation: LocationModel = LocationModel()
     private lateinit var savedLocations: List<LocationModel>
 
-    private lateinit var appActivity : Activity
-    private lateinit var appContext : Context
+    private lateinit var appActivity: Activity
+    private lateinit var appContext: Context
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -113,10 +114,11 @@ class HomeFragment : Fragment() {
                 }
             })
 
-            btn_newWaypoint.setOnClickListener(View.OnClickListener {
+            //The complete onClickListener with Navigation using createNavigateOnClickListener
+            binding.btnShowWaypoints.setOnClickListener(
+                Navigation.createNavigateOnClickListener(R.id.action_homeFragment_to_mapFragment)
+            )
 
-
-            })
             updateGPS()
             return binding.root
         } catch (e: Exception) {
